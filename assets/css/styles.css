@@ -16,51 +16,84 @@ body {
 nav {
   background-color: white;
   height: 70px;
-  width: 1000px;
-  border-radius: 50px;
-  margin: 0 auto;
-  position: relative;
-  margin-top: 30px;
+  width: 100%;
+  margin-top: 10px;
 }
 
 nav ul {
   display: flex;
-  align-items: center;
-
-  justify-content: center;
-
   list-style: none;
   text-decoration: none;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul li {
   text-decoration: none;
   font-size: 1.8rem;
   margin: 0 auto;
+
   font-weight: 600;
   color: black;
 }
 
-nav a:not(.logo):hover {
-  border-radius: 10px skyblue;
-  padding: 4px 20px;
-}
-
-nav a:not(.logo) {
+nav a:not(.logo):not(.btn-contact) {
   display: inline-block;
   padding: 4px 20px;
-  transition: background-color 0.3s;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: border-color 0.3s;
+}
+
+nav a:not(.logo):not(.btn-contact):hover {
+  border-color: skyblue;
 }
 
 nav img {
   height: 50px;
   width: 50px;
-  align-items: center;
-  justify-content: center;
+  margin-top: 5px;
 }
 
-nav ul li:nth-child(1) {
-  margin-right: auto;
-  margin-left: 50px;
+.btn-contact {
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: inline-block;
+  background-color: skyblue;
+  color: white;
+  text-decoration: none;
+  padding: 8px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.btn-contact:hover {
+  background-color: rgb(102, 163, 188);
+}
+
+/*header*/
+.header {
+  background-color: #e1e0e0;
+  width: 100%;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 4.5rem;
+  margin: 253px 0 10px 0;
+}
+
+.header p {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.header .btn-contact {
+  width: 150px;
+  align-items: center;
+  margin: 0 auto;
 }
