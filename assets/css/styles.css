@@ -75,7 +75,7 @@ nav img {
 .header {
   background-color: skyblue;
   width: 100%;
-  height: 649px;
+  height: 641px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -131,6 +131,89 @@ nav img {
   fill: #f3f2f2;
 }
 
+@media screen and (max-width: 700px) {
+  .header {
+    height: 625px;
+  }
+}
+
+#toggle-nav,
+#toggle-nav-btn-open,
+#toggle-nav-btn-close {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+
+    opacity: 0;
+    width: 100%;
+    height: 270px;
+
+    background-color: white;
+    padding-left: 2px;
+    text-align: center;
+    z-index: 99;
+    display: block;
+  }
+
+  #toggle-nav-btn-open {
+    display: inline-block;
+  }
+
+  .nav-links li a:not(.logo) {
+    color: skyblue;
+  }
+
+  .nav-links li a:hover {
+    color: skyblue;
+  }
+
+  .nav-links li .btn-contact {
+    background: white;
+    font-size: 1.7rem;
+    display: inline-block;
+    padding: 4px 20px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+  }
+
+  .nav-links li .btn-contact:hover {
+    border-color: skyblue;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  #toggle-nav:checked ~ label #toggle-nav-btn-open {
+    display: none;
+  }
+
+  #toggle-nav:checked ~ label #toggle-nav-btn-close {
+    display: inline-block;
+  }
+}
+
+#toggle-nav:checked ~ .nav-links {
+  opacity: 1;
+  left: 0;
+}
+
+#toggle-nav-btn-open,
+#toggle-nav-btn-close {
+  margin-left: 90%;
+  margin-top: 10px;
+}
+
+#toggle-nav-btn-open,
+#toggle-nav-btn-close {
+  font-size: 4rem;
+  color: skyblue;
+}
+
 /*About us*/
 .about-us {
   width: 100%;
@@ -168,5 +251,5 @@ nav img {
 .about-us .btn-contact {
   width: 150px;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 20px;
 }

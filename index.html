@@ -26,18 +26,37 @@
   <body>
     <!––nav––>
     <nav>
-      <ul>
+      <input type="checkbox" id="toggle-nav" />
+      <label for="toggle-nav">
+        <i id="toggle-nav-btn-open" class="fa-solid fa-bars"></i>
+        <i id="toggle-nav-btn-close" class="fa fa-times"></i>
+      </label>
+
+      <ul class="nav-links">
         <li>
           <a class="logo" href="#"
             ><img src="/assets/img/logo.webp" alt="billede af logo"
           /></a>
         </li>
-        <li><a href="/index.html">Hjem</a></li>
-        <li><a href="/about.html">Om os</a></li>
-        <li><a href="/holdet.html">Holdet</a></li>
-        <li><a href="/info.html">Forældreinfo</a></li>
-        <li><a href="/galleri.html">Galleri</a></li>
-        <li><a class="btn-contact" href="/contact.html">Kontakt os</a></li>
+
+        <li class="underline-hover">
+          <a href="/index.html">Hjem</a>
+        </li>
+        <li class="underline-hover">
+          <a href="/about.html">Om os</a>
+        </li>
+        <li class="underline-hover">
+          <a href="/holdet.html">Holdet</a>
+        </li>
+        <li class="underline-hover">
+          <a href="/info.html">Forældreinfo</a>
+        </li>
+        <li class="underline-hover">
+          <a href="/galleri.html">Galleri</a>
+        </li>
+        <li>
+          <a class="btn-contact" href="/contact.html">Kontakt os</a>
+        </li>
       </ul>
     </nav>
 
