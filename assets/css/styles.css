@@ -13,6 +13,8 @@ body {
   font-family: "Catamaran", sans-serif;
 }
 
+/*Navigation*/
+
 nav {
   background-color: white;
   height: 70px;
@@ -69,72 +71,6 @@ nav img {
 
 .btn-contact:hover {
   background-color: rgb(102, 163, 188);
-}
-
-/*header*/
-.header {
-  background-color: skyblue;
-  width: 100%;
-  height: 641px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.header h1 {
-  font-size: 4.5rem;
-  margin: 180px 0 10px 0;
-}
-
-.header p {
-  font-size: 1.7rem;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
-.header .btn-contact {
-  width: 150px;
-  align-items: center;
-  margin: 0 auto;
-  background-color: white;
-  color: black;
-  display: inline-block;
-
-  border: 2px solid transparent;
-  border-radius: 10px;
-  transition: border-color 0.3s;
-}
-
-.header .btn-contact:hover {
-  color: skyblue;
-  border-color: skyblue;
-}
-
-.custom-shape-divider-bottom-1712132351 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-bottom-1712132351 svg {
-  position: relative;
-  display: block;
-  width: calc(182% + 1.3px);
-  height: 70px;
-  transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1712132351 .shape-fill {
-  fill: #f3f2f2;
-}
-
-@media screen and (max-width: 850px) {
-  .header {
-    height: 625px;
-  }
 }
 
 #toggle-nav,
@@ -212,6 +148,72 @@ nav img {
 #toggle-nav-btn-close {
   font-size: 4rem;
   color: skyblue;
+}
+
+/*header*/
+.header {
+  background-color: skyblue;
+  width: 100%;
+  height: 641px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 4.5rem;
+  margin: 180px 0 10px 0;
+}
+
+.header p {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.header .btn-contact {
+  width: 150px;
+  align-items: center;
+  margin: 0 auto;
+  background-color: white;
+  color: black;
+  display: inline-block;
+
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: border-color 0.3s;
+}
+
+.header .btn-contact:hover {
+  color: skyblue;
+  border-color: skyblue;
+}
+
+.custom-shape-divider-bottom-1712132351 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1712132351 svg {
+  position: relative;
+  display: block;
+  width: calc(182% + 1.3px);
+  height: 70px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1712132351 .shape-fill {
+  fill: #f3f2f2;
+}
+
+@media screen and (max-width: 850px) {
+  .header {
+    height: 625px;
+  }
 }
 
 /*About us*/
