@@ -264,6 +264,7 @@ nav img {
 
   .about-us img {
     margin: 0 auto;
+    margin-bottom: 40px;
   }
 }
 
@@ -271,7 +272,7 @@ nav img {
 .activities {
   width: 100%;
   background-color: tomato;
-  height: 600px;
+  min-height: auto;
 }
 
 .activities div {
@@ -291,9 +292,8 @@ nav img {
   background-color: white;
   border: 6px solid skyblue;
   border-radius: 15px;
-  width: 574px;
+  width: 500px;
   height: 197px;
-
   margin: 0 auto;
 }
 
@@ -302,12 +302,16 @@ nav img {
   display: flex;
   flex-direction: column;
   width: 174px;
-  height: 186px;
+  height: 185.5px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .activity-date h3 {
   font-size: 8rem;
   text-align: center;
+  line-height: 1;
+  margin-top: 30px;
 }
 
 .activity-date p {
@@ -318,16 +322,26 @@ nav img {
 .activity-info {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 326px;
   height: 197px;
-
   margin: 40px 0 0 15px;
 }
 
-.activity-info h4 {
+.activity-info a {
   font-size: 2rem;
+  font-weight: 600;
+}
+
+.activity-info a:hover {
+  color: skyblue;
 }
 
 .activity-info p {
   font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1020px) {
+  .activities div {
+    column-count: 1; /* Switch to single column layout */
+  }
 }
