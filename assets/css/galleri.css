@@ -46,4 +46,16 @@ header h1 {
 
 .container .box .dream img {
   width: 100%;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container .box {
+    flex-direction: column;
+  }
+
+  .container .box .dream {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
