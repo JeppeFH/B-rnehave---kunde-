@@ -55,7 +55,8 @@ body {
 }
 
 /*Team-Leader*/
-#team-leader {
+#medarbejder-leader,
+#board-leader {
   background-image: url(/assets/img/Stemningsbilleder/17.JPG);
   background-repeat: no-repeat;
   background-position: center;
@@ -69,7 +70,12 @@ body {
   border-radius: 15px;
 }
 
-#team-leader div {
+#board-leader {
+  background-image: url(/assets/img/Stemningsbilleder/15.JPG);
+}
+
+#medarbejder-leader div,
+#board-leader div {
   background-color: white;
   border-radius: 100px;
   display: flex;
@@ -80,18 +86,26 @@ body {
   text-align: center;
 }
 
-#team-leader p {
+#medarbejder-leader .leader-name,
+#board-leader .leader-name {
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
 }
 
-#team-leader p:last-child {
+#medarbejder-leader .leader-position,
+#board-leader .leader-position {
   color: skyblue;
   font-size: 1.4rem;
 }
 
-#team-leader img {
+#medarbejder-leader p,
+#board-leader p {
+  font-size: 1.4rem;
+}
+
+#medarbejder-leader img,
+#board-leader img {
   height: 198px;
   width: 198px;
   border-radius: 100px;
@@ -99,7 +113,8 @@ body {
   margin-bottom: 5px;
 }
 
-#team-leader h2 {
+#medarbejder-leader h2,
+#board-leader h2 {
   font-size: 4rem;
   color: white;
   text-align: center;
@@ -123,7 +138,8 @@ body {
   max-width: 1180px;
 }
 
-.team-container {
+.team-container,
+.board-container {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -132,12 +148,14 @@ body {
   background-color: white;
 }
 
-.team-container figure {
+.team-container figure,
+.board-container figure {
   width: auto;
   height: auto;
 }
 
-.team-container img {
+.team-container img,
+.board-container img {
   width: 264px;
   height: 272px;
   border-radius: 20px;
@@ -153,4 +171,19 @@ body {
 .team-container p:nth-child(odd) {
   color: skyblue;
   font-size: 1.4rem;
+}
+
+.board-position {
+  color: skyblue;
+  font-size: 1.4rem;
+}
+
+.board-container p {
+  font-size: 1.4rem;
+}
+
+.board-container .board-name {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
 }
