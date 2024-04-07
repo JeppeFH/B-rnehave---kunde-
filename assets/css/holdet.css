@@ -54,7 +54,7 @@ body {
   margin-bottom: 40px;
 }
 
-/*Team-Leader*/
+/*Leader af medarbejdere og Bestyrelse*/
 #medarbejder-leader,
 #board-leader {
   background-image: url(/assets/img/Stemningsbilleder/17.JPG);
@@ -124,7 +124,7 @@ body {
   width: 1180px;
 }
 
-/*Team-Medarbejdere*/
+/*Medarbejdere og Bestyrelse */
 .medarbejdere {
   height: auto;
   display: flex;
