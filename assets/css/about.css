@@ -11,3 +11,24 @@ html {
 body {
   font-family: "Catamaran", sans-serif;
 }
+/*Header*/
+.om-os-header {
+  background-color: skyblue;
+  height: auto;
+  width: 100%;
+}
+
+.om-os-header h2 {
+  font-size: 7rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 30px;
+}
+.om-os-header p {
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 2;
+  text-align: center;
+  padding-bottom: 40px;
+}
