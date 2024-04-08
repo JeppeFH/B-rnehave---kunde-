@@ -43,6 +43,7 @@ body {
   gap: 30px;
   align-items: center;
   justify-content: center;
+  padding: 30px;
 }
 
 .contact-info {
@@ -69,6 +70,12 @@ body {
 .fa-square-instagram,
 .fa-linkedin {
   color: skyblue;
+}
+
+.fa-square-facebook:hover,
+.fa-linkedin:hover,
+.fa-square-instagram:hover {
+  color: black;
 }
 
 .contact-info h4 {
