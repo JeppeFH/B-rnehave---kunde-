@@ -157,6 +157,7 @@ nav img {
   display: flex;
   flex-direction: column;
   text-align: center;
+  position: relative;
 }
 
 .header h1 {
@@ -168,6 +169,7 @@ nav img {
   font-size: 1.7rem;
   font-weight: bold;
   margin-bottom: 30px;
+  line-height: 1.8;
 }
 
 .header .btn-contact {
@@ -207,12 +209,6 @@ nav img {
 
 .custom-shape-divider-bottom-1712132351 .shape-fill {
   fill: #f3f2f2;
-}
-
-@media screen and (max-width: 850px) {
-  .header {
-    height: 625px;
-  }
 }
 
 /*About us*/
@@ -402,6 +398,6 @@ footer p:last-child {
 
 footer img {
   height: 80px;
-  width: 100px;
+  width: 120px;
   margin-bottom: 20px;
 }
