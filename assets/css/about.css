@@ -14,8 +14,8 @@ body {
 /*Header*/
 .om-os-header {
   background-color: skyblue;
+  height: auto;
   width: 100%;
-  text-align: center;
 }
 
 .om-os-header h2 {
@@ -59,6 +59,21 @@ body {
   font-size: 17px;
   color: black;
 }
+<<<<<<< HEAD
+=======
+.om-os a {
+  display: inline-block;
+  color: black;
+  background-color: skyblue;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 27px 62.5px;
+  margin-top: 48px;
+  margin-right: auto;
+}
+>>>>>>> 0f612637703174138cae704b16ae587f23194e4e
 .opening-hours-container {
   background-color: skyblue;
   width: 100%;
@@ -67,7 +82,12 @@ body {
   gap: 30px;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   padding: 0px 0 100px 0;
+=======
+  padding: 0 0 100px 0;
+  text-align: center;
+>>>>>>> 0f612637703174138cae704b16ae587f23194e4e
 }
 .opening-hours-container h1 {
   font-size: 56px;
