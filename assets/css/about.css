@@ -11,6 +11,7 @@ html {
 body {
   font-family: "Catamaran", sans-serif;
 }
+
 /*Header*/
 .om-os-header {
   background-color: skyblue;
@@ -22,114 +23,141 @@ body {
   font-size: 7rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 20px;
-  padding-top: 30px;
+  padding: 30px;
 }
-.om-os-header p {
-  font-size: 1.7rem;
-  font-weight: 600;
-  line-height: 2;
-  text-align: center;
-  padding-bottom: 40px;
-}
+
+/*Om os*/
 .om-os-container {
   padding: 100px;
-}
-.om-os-container article {
-  max-width: 1080px;
-  margin: 0 auto;
-  margin-bottom: 80px;
+  width: 100%;
   display: flex;
+  margin-bottom: 30px;
+  gap: 20px;
 }
-.om-os-container article img {
-  margin-bottom: 120px;
-}
-.om-os {
+
+.om-os-container article {
   display: flex;
   flex-direction: column;
 }
-.om-os h1 {
-  display: flex;
-  justify-content: left;
-  font-size: 56px;
+
+.om-os-container h1 {
+  font-size: 4rem;
   font-weight: bold;
   color: black;
+  margin-bottom: 10px;
 }
-.om-os p {
-  font-size: 17px;
+
+.om-os-container img {
+  height: 422px;
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+  border-radius: 5px;
+}
+
+.om-os-container p {
+  font-size: 1.7rem;
   color: black;
+  margin-bottom: 10px;
 }
-.om-os a {
-  display: inline-block;
-  color: black;
-  background-color: skyblue;
-  text-decoration: none;
-  border-radius: 50px;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 27px 62.5px;
-  margin-top: 48px;
-  margin-right: auto;
+
+/*Responsiv*/
+@media screen and (max-width: 1200px) {
+  .om-os-container {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .om-os-container p,
+  .om-os-container h1 {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .om-os-container p {
+    line-height: 1.8;
+    text-align: start;
+    margin-bottom: 5px;
+  }
+
+  .om-os-container img {
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
 }
+
+/*Åbningstider*/
 .opening-hours-container {
-  background-color: skyblue;
+  background-color: rgb(245, 243, 243);
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: center;
   justify-content: center;
-  padding: 0 0 100px 0;
+  padding-bottom: 100px;
   text-align: center;
 }
+
 .opening-hours-container h1 {
-  font-size: 56px;
+  font-size: 4rem;
   font-weight: bold;
   padding: 48px;
   display: flex;
   text-align: center;
 }
+
 .opening-hours {
   display: flex;
   flex-direction: column;
-  border: 10px solid skyblue;
+  border: 5px solid skyblue;
   background-color: rgb(255, 255, 255);
   border-radius: 25px;
   width: 400px;
   height: auto;
   padding: 5px;
 }
+
 .opening-hours h2 {
-  font-size: 30px;
+  font-size: 2.5rem;
   text-align: center;
 }
+
 .opening-hours ul {
   list-style-position: inside;
 }
+
 .opening-hours ul li {
-  font-size: 16px;
+  font-size: 1.6rem;
   align-items: center;
   text-align: center;
 }
+
 .closing-days {
   display: flex;
   flex-direction: column;
-  border: 10px solid skyblue;
+  border: 5px solid skyblue;
   background-color: rgb(255, 255, 255);
   border-radius: 25px;
   width: 400px;
   height: auto;
   padding: 5px;
 }
+
 .closing-days h2 {
-  font-size: 30px;
+  font-size: 3rem;
   text-align: center;
 }
+
 .closing-days ul {
   list-style-position: inside;
 }
+
 .closing-days ul li {
-  font-size: 16px;
+  font-size: 1.6rem;
   align-items: center;
   text-align: center;
 }
