@@ -34,15 +34,56 @@ body {
   padding-bottom: 40px;
 }
 
-/*mad*/
-#mad {
-  display: grid;
+/*Kost og måltider*/
+.kostplan {
+  background-color: rgb(242, 240, 240);
+  display: flex;
+  width: 100%;
+  gap: 100px;
+  margin: 0 auto;
+
+  align-items: center;
+  padding: 100px 50px;
 }
 
-img {
-  max-width: 300px;
-  border-radius: 20px;
-  padding: 5px;
+.kostplan article {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.kostplan h2 {
+  text-align: center;
+  font-size: 4rem;
+  color: black;
+  font-weight: 600;
+}
+
+.kostplan p {
+  text-align: center;
+  font-size: 1.6rem;
+  color: black;
+}
+
+.kostplan figure {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.kostplan img {
+  max-width: 400px;
+  max-height: 400px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 850px) {
+  .kostplan {
+    flex-direction: column;
+  }
 }
 
 /*stuer*/
@@ -96,9 +137,12 @@ img {
 @media screen and (max-width: 768px) {
   .box {
     flex-direction: column;
+
+    gap: 20px;
   }
 
   .stuer-img {
     width: 100%;
+    height: 100%;
   }
 }
