@@ -30,8 +30,10 @@ body {
 .om-os-container {
   padding: 100px;
   width: 100%;
-  display: flex;
   margin-bottom: 30px;
+}
+.om-os-content {
+  display: flex;
   gap: 20px;
 }
 
