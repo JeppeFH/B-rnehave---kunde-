@@ -30,8 +30,10 @@ body {
 .om-os-container {
   padding: 100px;
   width: 100%;
-  display: flex;
   margin-bottom: 30px;
+}
+.om-os-content {
+  display: flex;
   gap: 20px;
 }
 
@@ -134,33 +136,6 @@ body {
 }
 
 .opening-hours ul li {
-  font-size: 1.6rem;
-  align-items: center;
-  text-align: center;
-}
-
-.closing-days {
-  display: flex;
-  flex-direction: column;
-  border: 5px solid skyblue;
-  background-color: rgb(255, 255, 255);
-  border-radius: 25px;
-  width: 400px;
-  height: auto;
-  padding: 5px;
-}
-
-.closing-days h2 {
-  font-size: 3rem;
-  text-align: center;
-}
-
-.closing-days ul {
-  margin-left: 80px;
-  display: inline-block;
-}
-
-.closing-days ul li {
   font-size: 1.6rem;
   align-items: center;
   text-align: center;
