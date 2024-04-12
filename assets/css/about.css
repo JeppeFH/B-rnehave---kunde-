@@ -122,7 +122,6 @@ body {
   width: 400px;
   height: auto;
   padding: 5px;
-  align-items: center;
 }
 
 .opening-hours h2 {
@@ -138,5 +137,5 @@ body {
 .opening-hours ul li {
   font-size: 1.6rem;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
