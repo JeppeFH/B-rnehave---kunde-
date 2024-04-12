@@ -19,21 +19,22 @@ nav {
   height: 70px;
   width: 100%;
   margin-top: 10px;
+  display: flex;
 }
 
 nav ul {
   display: flex;
+  text-align: center;
+  margin: 0 auto;
+  gap: 30px;
   list-style: none;
   text-decoration: none;
-  justify-content: center;
   align-items: center;
 }
 
 nav ul li {
   text-decoration: none;
   font-size: 1.8rem;
-  margin: 0 auto;
-
   font-weight: 600;
   color: black;
 }
@@ -53,7 +54,8 @@ nav a:not(.logo):not(.btn-contact):hover {
 nav img {
   height: 50px;
   width: 70px;
-  margin-top: 5px;
+  margin-top: 7px;
+  margin-left: 30px;
 }
 
 .btn-contact {
@@ -81,7 +83,6 @@ nav img {
 @media screen and (max-width: 768px) {
   .nav-links {
     position: absolute;
-
     opacity: 0;
     width: 100%;
     height: 270px;
@@ -90,11 +91,21 @@ nav img {
     padding-left: 2px;
     text-align: center;
     z-index: 99;
-    display: block;
+    display: none;
   }
 
   #toggle-nav-btn-open {
     display: inline-block;
+  }
+
+  nav {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav img {
+    margin-top: 0;
   }
 
   .nav-links li a:not(.logo) {
@@ -119,10 +130,6 @@ nav img {
     border-color: skyblue;
   }
 
-  .nav-links .logo {
-    display: none;
-  }
-
   #toggle-nav:checked ~ label #toggle-nav-btn-open {
     display: none;
   }
@@ -135,12 +142,13 @@ nav img {
 #toggle-nav:checked ~ .nav-links {
   opacity: 1;
   left: 0;
+  display: block;
+  top: 80px;
 }
 
 #toggle-nav-btn-open,
 #toggle-nav-btn-close {
-  margin-left: 90%;
-  margin-top: 10px;
+  margin-right: 30px;
 }
 
 #toggle-nav-btn-open,
