@@ -65,15 +65,13 @@ body {
 
 /*Responsiv*/
 @media screen and (max-width: 1200px) {
-  .om-os-container {
+  .om-os-content {
     flex-direction: column;
-    margin: 0 auto;
   }
 
   .om-os-container p,
   .om-os-container h1 {
     text-align: center;
-    margin: 0 auto;
   }
 
   .om-os-container p {
@@ -82,12 +80,18 @@ body {
     margin-bottom: 5px;
   }
 
-  .om-os-container img {
-    margin: 0 auto;
+  .om-os-content img {
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .om-os-content img {
+    height: 99%;
+    width: 99%;
+    align-items: center;
+    justify-content: center;
   }
 }
 
